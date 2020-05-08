@@ -1,0 +1,17 @@
+{
+  "ignition": { "version": "2.2.0" },
+  "passwd": {
+    "users": [
+      {
+        "name": "core",
+        "passwordHash": "$1$7X2OoGIo$SnfQ1fDrODPzpSo3sNEsj/"
+      }
+    ]
+  },
+  "networkd": {
+    "units": [{
+      "name": "00-enp0s5.network",
+      "contents": "[Match]\nName=enp0s5\n\n[Network]\nDNS=192.168.122.1\nAddress=192.168.122.18/16\nGateway=192.168.122.1"
+    }]
+  }
+}
