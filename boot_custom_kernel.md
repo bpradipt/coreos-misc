@@ -1,5 +1,6 @@
 # Steps/Commands to compile and boot into a custom kernel on RHCOS node:
-  
+
+```
   # cd /var/home/core
   
   # cat dockfile
@@ -54,4 +55,5 @@
              a. Use alias "modprobe -d /var/home/core" for "modprobe"
              b. Build the missing kernel modules into the initrd with add-drivers option
              c. Compile the modules into the kernel (=y instead of =m)
+```
 
