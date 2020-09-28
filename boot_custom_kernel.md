@@ -3,14 +3,14 @@
 ```
   # cd /var/home/core
   
-  # cat dockfile
+  # cat Dockerfile
   FROM fedora:latest
   
   RUN dnf install -y kexec-tools make gcc git openssl-devel bison flex autoconf automake bc
   # 
   
   *** Setup container image to build the kernel ***
-  # podman build -t fedora:build -f dockfile
+  # podman build -t fedora:build -f Dockerfile
   
   # cp /lib/modules/`uname -r`/config .
   
